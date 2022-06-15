@@ -25,7 +25,7 @@
 					'Running awesome-app@0.0.0',
 					'',
 					'see documents!',
-					'<a href="https://storeappjs.netlify.app/documents/intro"https://storeappjs.netlify.app/documents/intro</a>',
+					'<a href="https://storeappjs.netlify.app/documents/intro">https://storeappjs.netlify.app/documents/intro</a>',
 					''
 				]
 			]
