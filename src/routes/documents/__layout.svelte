@@ -31,7 +31,7 @@
 					<a
 						href={`/documents/${Object.keys(tag).toString().replace('overview', '')}${String(
 							post
-						).replaceAll(' ', '-')}`}
+						).replace(/ /g, '-')}`}
 					>
 						{String(post).replace('/', '')}
 					</a>
