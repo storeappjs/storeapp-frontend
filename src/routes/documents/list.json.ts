@@ -4,6 +4,6 @@ import { join } from 'path';
 
 export function get() {
 	return {
-		body: readFileSync('src/posts/config.json').toString()
+		body: readFileSync(join(process.cwd(), 'src/posts/config.json')).toString()
 	};
 }
