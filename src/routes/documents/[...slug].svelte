@@ -23,7 +23,7 @@
 	<title>{post.data.title} - storeapp docs</title>
 </svelte:head>
 <div class="docs-container">
-	<h1>{post.data.title}</h1>
+	<h1 id="title">{post.data.title}</h1>
 	<div class="docs-data">
 		<span
 			>{@html post.html
@@ -45,9 +45,9 @@
 		padding: 1rem;
 		width: 60%;
 		margin: 50px auto;
-		h1 {
+		#title {
 			font-size: 2.35rem;
-			margin-bottom: 3.3rem;
+			margin-bottom: 1.1rem;
 		}
 	}
 </style>

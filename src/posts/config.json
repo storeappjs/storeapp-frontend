@@ -1,7 +1,6 @@
 [
 	{ "overview": ["intro"] },
-	{ "usage": ["/installation", "/storeapp cli"] },
-	{ "commands": ["/basic", "/search"] },
+	{ "usage": ["/installation", "/storeapp"] },
 	{ "application": ["/upload", "/store not available"] },
 	{ "packages": ["/downloader", "/types"] }
 ]

@@ -11,3 +11,9 @@ title: 'packages/downloader'
 ```bash
 $ npm install @storeapp/downloader
 ```
+
+```js
+const { download } = require('@storeapp/downloader');
+// or
+import { download } from '@storeapp/downloader';
+```
