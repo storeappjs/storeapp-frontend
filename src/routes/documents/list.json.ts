@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { lstatSync, readdirSync, readFileSync } from 'fs';
+import { readFileSync } from 'fs';
 import { join } from 'path';
 
 export function get() {

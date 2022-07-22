@@ -2,11 +2,17 @@
 	import type { Load } from '@sveltejs/kit';
 	import { base } from '$app/paths';
 	import type { PostType } from 'src/lib/post';
+	import { posts } from '$lib/store';
 
 	export const load: Load = async ({ params, fetch }) => {
 		const { slug } = params;
-		console.log(slug);
-		const response = await fetch(`${base}/documents/${slug}.json`).then((r) => r.json());
+		let response;
+		if (Object.hasOwn(posts, `${base}/documents/${slug}.json`)) {
+			response = (posts as any)[`${base}/documents/${slug}.json`];
+		} else {
+			response = await fetch(`${base}/documents/${slug}.json`).then((r) => r.json());
+			(posts as any)[`${base}/documents/${slug}.json`] = response;
+		}
 		return {
 			props: {
 				post: response
